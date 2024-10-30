@@ -13128,7 +13128,7 @@ func HandleLogin(resp http.ResponseWriter, request *http.Request) {
 	if cors {
 		return
 	}
-
+	log.Printf("hey -------------------------------------> ")
 	if project.Environment == "cloud" {
 		// Checking if it's a special region. All user-specific requests should
 		// go through shuffler.io and not subdomains
