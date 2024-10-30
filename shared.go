@@ -18767,6 +18767,7 @@ func fixCertificate(parsedX509Key string) string {
 // Should make this stuff only possible after login
 func HandleOpenId(resp http.ResponseWriter, request *http.Request) {
 	cors := HandleCors(resp, request)
+	Printf("-------------------------------->")
 	if cors {
 		return
 	}
